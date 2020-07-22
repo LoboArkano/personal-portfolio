@@ -1,0 +1,61 @@
+/*
+*= require_tree .
+*= require_self
+*/
+
+.d-flex {
+  display: flex;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  height: 67px;
+  background-color: #27aba6;
+
+  .navbar {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-title {
+      width: 20%;
+      color: #dbdeff;
+      font-size: 2.5rem;
+    }
+
+    .nav-link-container {
+      justify-content: space-between;
+      align-items: center;
+      width: 30%;
+      height: 100%;
+
+      .nav-link {
+        color: #dbdeff;
+        font-size: 2.2rem;
+        font-weight: bold;
+        list-style: none;
+        text-decoration: none;
+
+        &:hover {
+          color: #30cfc9;
+        }
+      }
+    }
+  }
+}
