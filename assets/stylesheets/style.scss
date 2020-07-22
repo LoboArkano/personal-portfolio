@@ -59,3 +59,25 @@ body {
     }
   }
 }
+
+.welcome-section {
+  color: #9fa6f5;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  .title {
+    font-family: 'Saira Stencil One', Arial, Helvetica, sans-serif;
+    padding-top: 67px;
+    font-size: 5rem;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 48%, rgba(0, 212, 255, 1) 57%, rgba(0, 0, 0, 1) 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px white;
+  }
+}
