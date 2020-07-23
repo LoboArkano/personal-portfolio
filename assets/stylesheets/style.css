@@ -17,6 +17,14 @@
   text-decoration: none;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -35,7 +43,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   height: 67px;
   background-color: #27aba6;
 }
@@ -68,7 +75,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  height: 100%;
 }
 
 .header-nav .navbar .nav-link-container .nav-link {
@@ -87,10 +93,6 @@ body {
   color: #9fa6f5;
   background-color: black;
   height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -106,7 +108,6 @@ body {
   font-family: 'Saira Stencil One', Arial, Helvetica, sans-serif;
   padding-top: 67px;
   font-size: 5rem;
-  margin: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(48%, #020024), color-stop(57%, #00d4ff), color-stop(95%, black));
   background: linear-gradient(180deg, #020024 48%, #00d4ff 57%, black 95%);
   -webkit-background-clip: text;
@@ -116,8 +117,6 @@ body {
 
 .projects-section {
   background-color: #51d797;
-  width: 100%;
-  margin: 0%;
 }
 
 .projects-section .title {
@@ -129,7 +128,6 @@ body {
 .projects-section .projects-grid {
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: (600px)[3];
@@ -147,20 +145,16 @@ body {
 .projects-section .projects-grid .project-tile .name {
   background-color: #4751c9;
   color: white;
-  width: 100%;
   height: 50px;
   line-height: 50px;
 }
 
-.projects-section .projects-grid .project-tile .link {
+.projects-section .projects-grid .project-tile .image-link {
   display: block;
-  width: 100%;
   height: 350px;
 }
 
-.projects-section .projects-grid .project-tile .link .img {
-  width: 100%;
-  height: 100%;
+.projects-section .projects-grid .project-tile .image-link .img {
   border: 1px solid gray;
   -o-object-fit: cover;
      object-fit: cover;
@@ -169,7 +163,6 @@ body {
 }
 
 .projects-section .projects-grid .project-tile .button {
-  width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: #4751c9;
@@ -185,10 +178,15 @@ input[type=button] {
   border: none;
   border-radius: 2px;
   margin-bottom: 30px;
+  width: 50%;
   color: white;
   background-color: #4751c9;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #30cfc9;
 }
 
 .contact {
