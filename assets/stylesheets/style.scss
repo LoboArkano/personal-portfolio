@@ -5,6 +5,10 @@
 
 $dark-grey: #3e3c3c;
 
+$darker-grey: #1c1a19;
+
+$orange: #f55800;
+
 $black: #000;
 
 $white: #fff;
@@ -71,6 +75,66 @@ html {
           text-decoration: underline 1px $white;
         }
       }
+    }
+  }
+}
+
+.welcome {
+  height: 100vh;
+  margin-top: 72px;
+  background-color: #1c1a19;
+
+  .social-box {
+    width: 10%;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+
+    .social-list {
+      width: max-content;
+
+      .item {
+        margin-bottom: 10px;
+
+        .profile-link {
+          font-size: 1.5rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .presentation {
+    flex-direction: column;
+    width: 40%;
+    color: $white;
+    text-align: left;
+    justify-content: center;
+    padding-left: 20px;
+
+    .title {
+      font-size: 4rem;
+      color: $orange;
+      line-height: 65px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .desc {
+      font-size: 1.4rem;
+      line-height: 25px;
+    }
+  }
+
+  .main-image-cont {
+    max-width: 50%;
+
+    .image {
+      object-fit: cover;
     }
   }
 }

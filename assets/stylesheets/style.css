@@ -77,4 +77,77 @@ html {
   -webkit-text-decoration: underline 1px #fff;
           text-decoration: underline 1px #fff;
 }
+
+.welcome {
+  height: 100vh;
+  margin-top: 72px;
+  background-color: #1c1a19;
+}
+
+.welcome .social-box {
+  width: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 20px;
+}
+
+.welcome .social-box .social-list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.welcome .social-box .social-list .item {
+  margin-bottom: 10px;
+}
+
+.welcome .social-box .social-list .item .profile-link {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.welcome .presentation {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  color: #fff;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+}
+
+.welcome .presentation .title {
+  font-size: 4rem;
+  color: #f55800;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+.welcome .presentation .subtitle {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.welcome .presentation .desc {
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
+.welcome .main-image-cont {
+  max-width: 50%;
+}
+
+.welcome .main-image-cont .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
