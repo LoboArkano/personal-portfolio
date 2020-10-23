@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .d-grid {
   display: -ms-grid;
   display: grid;
@@ -246,5 +250,64 @@ html {
   font-size: 1.2rem;
   color: #fff;
   background-color: #f55800;
+}
+
+.works .project {
+  position: relative;
+  color: #fff;
+}
+
+.works .project .p-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.works .project .p-image-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.160084)), color-stop(90%, rgba(0, 0, 0, 0.793137)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.160084) 0%, rgba(0, 0, 0, 0.793137) 90%);
+}
+
+.works .project .p-image-cover .p-title {
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+}
+
+.works .project .p-image-cover .p-desc {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.works .project .p-image-cover .tags-cont2 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works .project .p-image-cover .tags-cont2 .tag2 {
+  padding: 10px 12px;
+  background-color: #3e3c3c;
+  margin-right: 6px;
+}
+
+.works .project .see-btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f55800;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 /*# sourceMappingURL=style.css.map */
