@@ -7,10 +7,21 @@
           box-sizing: border-box;
 }
 
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.justify-c-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .justify-c-space {
@@ -149,5 +160,91 @@ html {
 .welcome .main-image-cont .image {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.portfolio-section {
+  padding: 90px;
+}
+
+.portfolio-section .portfolio-title {
+  font-size: 2.5rem;
+  margin-left: 15px;
+  margin-right: 18px;
+}
+
+.portfolio-section .h-line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+.works {
+  -ms-grid-rows: 440px (435px)[2];
+      grid-template-rows: 440px repeat(2, 435px);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 90px;
+}
+
+.works .main-project {
+  grid-column: span 3;
+}
+
+.works .main-project .mp-img-cont {
+  width: 60%;
+  padding: 3%;
+  background-color: #fa7629;
+}
+
+.works .main-project .mp-img-cont .mp-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+
+.works .main-project .mp-info {
+  width: 40%;
+  padding-top: 5px;
+  padding-left: 1.5%;
+}
+
+.works .main-project .mp-info .mp-title {
+  font-size: 3rem;
+  margin-bottom: 19px;
+}
+
+.works .main-project .mp-info .mp-desc {
+  font-size: 1.35rem;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.works .main-project .mp-info .tags-cont {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works .main-project .mp-info .tags-cont .tag {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.works .main-project .mp-info .mp-btn {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 15px;
+  padding: 12px 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #f55800;
 }
 /*# sourceMappingURL=style.css.map */

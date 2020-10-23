@@ -3,11 +3,15 @@
 *= require_self
 */
 
+$grey: #8993a4;
+
 $dark-grey: #3e3c3c;
 
 $darker-grey: #1c1a19;
 
 $orange: #f55800;
+
+$light-orange: #fa7629;
 
 $black: #000;
 
@@ -17,8 +21,16 @@ $white: #fff;
   box-sizing: border-box;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .d-flex {
   display: flex;
+}
+
+.justify-c-center {
+  justify-content: center;
 }
 
 .justify-c-space {
@@ -135,6 +147,83 @@ html {
 
     .image {
       object-fit: cover;
+    }
+  }
+}
+
+.portfolio-section {
+  padding: 90px;
+
+  .portfolio-title {
+    font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 18px;
+  }
+
+  .h-line {
+    flex-grow: 1;
+    height: 1px;
+    border: 1px solid $black;
+    margin-right: 10px;
+  }
+}
+
+.works {
+  grid-template-rows: 440px repeat(2, 435px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 90px;
+
+  .main-project {
+    grid-column: span 3;
+
+    .mp-img-cont {
+      width: 60%;
+      padding: 3%;
+      background-color: $light-orange;
+
+      .mp-img {
+        object-fit: cover;
+        object-position: 0% 0%;
+      }
+    }
+
+    .mp-info {
+      width: 40%;
+      padding-top: 5px;
+      padding-left: 1.5%;
+
+      .mp-title {
+        font-size: 3rem;
+        margin-bottom: 19px;
+      }
+
+      .mp-desc {
+        font-size: 1.35rem;
+        line-height: 25px;
+        margin-bottom: 15px;
+      }
+
+      .tags-cont {
+        flex-wrap: wrap;
+
+        .tag {
+          border: 1px solid $grey;
+          padding: 10px 12px;
+          margin-right: 8px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .mp-btn {
+        cursor: pointer;
+        width: max-content;
+        margin-top: 15px;
+        padding: 12px 12px;
+        font-size: 1.2rem;
+        color: $white;
+        background-color: $orange;
+      }
     }
   }
 }
