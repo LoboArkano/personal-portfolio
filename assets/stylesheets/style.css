@@ -310,4 +310,87 @@ html {
   padding-top: 17px;
   padding-bottom: 17px;
 }
+
+.about-me-cont {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1135px;
+  background-color: #1c1a19;
+  color: #fff;
+  padding: 7%;
+}
+
+.about-me-cont .about-me {
+  width: 50%;
+  height: 35%;
+}
+
+.about-me-cont .about-me .am-title {
+  font-size: 5rem;
+  color: #f55800;
+  margin-bottom: 24px;
+}
+
+.about-me-cont .about-me .am-desc {
+  font-size: 1.45rem;
+  line-height: 30px;
+  margin-bottom: 38px;
+}
+
+.about-me-cont .about-me .am-btn {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.7rem;
+  background-color: #f55800;
+  padding: 12px;
+}
+
+.about-me-cont .about-me-img {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-me-cont .h-line2 {
+  height: 1px;
+  border: 1px solid #fff;
+}
+
+.about-me-cont .skills {
+  height: 35%;
+}
+
+.about-me-cont .skills .skill-col {
+  width: 33%;
+  line-height: 40px;
+}
+
+.about-me-cont .skills .skill-col .s-title {
+  font-size: 2.3rem;
+}
+
+.about-me-cont .skills .skill-col .shape-1 {
+  list-style: none inside url("../images/shape1.png");
+}
+
+.about-me-cont .skills .skill-col .shape-2 {
+  list-style: none inside url("../images/shape2.png");
+}
+
+.about-me-cont .skills .skill-col .shape-3 {
+  list-style: none inside url("../images/shape3.png");
+}
+
+.about-me-cont .skills .skill-col .s-item {
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=style.css.map */
