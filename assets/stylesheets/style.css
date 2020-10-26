@@ -458,4 +458,23 @@ html {
   color: #fff;
   font-size: 1.5rem;
 }
+
+.footer {
+  border-top: 1px solid #dddcdc;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer .f-item {
+  padding-right: 8px;
+  font-size: 1.7rem;
+}
+
+.footer .f-item .f-link {
+  color: #3e3c3c;
+}
+
+.footer .f-item .f-link:hover {
+  color: #8993a4;
+}
 /*# sourceMappingURL=style.css.map */

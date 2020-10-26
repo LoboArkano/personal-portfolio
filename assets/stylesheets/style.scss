@@ -426,3 +426,22 @@ html {
     }
   }
 }
+
+.footer {
+  border-top: 1px solid $light-grey;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  .f-item {
+    padding-right: 8px;
+    font-size: 1.7rem;
+
+    .f-link {
+      color: $dark-grey;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+}
