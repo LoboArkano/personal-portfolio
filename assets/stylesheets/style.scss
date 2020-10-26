@@ -3,6 +3,8 @@
 *= require_self
 */
 
+$light-grey: #dddcdc;
+
 $grey: #8993a4;
 
 $dark-grey: #3e3c3c;
@@ -361,6 +363,66 @@ html {
       .s-item {
         font-size: 1.6rem;
       }
+    }
+  }
+}
+
+.contact {
+  color: $black;
+  padding: 7%;
+
+  .c-text {
+    width: 40%;
+    font-size: 2.9rem;
+  }
+
+  .c-form {
+    width: 60%;
+
+    input[name=first],
+    input[name=last] {
+      width: 48%;
+    }
+
+    input[name=email] {
+      width: 100%;
+    }
+
+    input[name=first],
+    input[name=last],
+    input[name=email] {
+      background-color: $white;
+      padding: 14px;
+      font-size: 1.1rem;
+    }
+
+    textarea[name=message] {
+      width: 100%;
+      height: 125px;
+      padding: 12px;
+      font-size: 1.15rem;
+    }
+
+    input[name=first],
+    input[name=last],
+    input[name=email],
+    textarea[name=message] {
+      margin-bottom: 25px;
+      border: none;
+      border-bottom: 1px solid $grey;
+
+      &:focus {
+        background-color: $light-grey;
+      }
+    }
+
+    .submit-btn {
+      cursor: pointer;
+      width: max-content;
+      padding: 12px;
+      background-color: $orange;
+      color: $white;
+      font-size: 1.5rem;
     }
   }
 }
