@@ -47,6 +47,10 @@ $white: #fff;
   align-items: center;
 }
 
+.align-i-start {
+  align-items: flex-start;
+}
+
 .dec-none {
   text-decoration: none;
 }
@@ -57,6 +61,10 @@ $white: #fff;
 
 .h-100 {
   height: 100%;
+}
+
+.h-max {
+  height: max-content;
 }
 
 html {
@@ -286,6 +294,79 @@ html {
       font-size: 1.2rem;
       padding-top: 17px;
       padding-bottom: 17px;
+    }
+  }
+}
+
+.p-full-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+
+  .fv-container {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 85%;
+    background-color: $white;
+    opacity: 1;
+    padding: 27px 24px;
+    overflow-y: auto;
+
+    .fv-title {
+      font-size: 1.8rem;
+      width: 95%;
+      margin-bottom: 11px;
+    }
+
+    .close-btn-cont {
+      width: 5%;
+
+      .close-btn {
+        cursor: pointer;
+      }
+    }
+
+    .fv-tag {
+      padding: 10px 12px;
+      border: 1px solid $grey;
+      margin-right: 10px;
+      margin-bottom: 40px;
+    }
+
+    .fv-info {
+      height: calc(100% - 115px);
+
+      .fv-img {
+        width: 60%;
+        object-fit: cover;
+      }
+
+      .fv-info-right {
+        flex-direction: column;
+        width: 40%;
+        padding-left: 25px;
+
+        .fv-desc {
+          font-size: 1.14rem;
+          line-height: 30px;
+        }
+
+        .fv-btns {
+          width: 210px;
+
+          .fv-btn {
+            cursor: pointer;
+            font-size: 1.21rem;
+            padding: 12px;
+            background-color: $orange;
+            color: $white;
+          }
+        }
+      }
     }
   }
 }

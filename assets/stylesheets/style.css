@@ -40,6 +40,12 @@
           align-items: center;
 }
 
+.align-i-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .dec-none {
   text-decoration: none;
 }
@@ -50,6 +56,12 @@
 
 .h-100 {
   height: 100%;
+}
+
+.h-max {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 html {
@@ -309,6 +321,87 @@ html {
   font-size: 1.2rem;
   padding-top: 17px;
   padding-bottom: 17px;
+}
+
+.p-full-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.p-full-view .fv-container {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  height: 85%;
+  background-color: #fff;
+  opacity: 1;
+  padding: 27px 24px;
+  overflow-y: auto;
+}
+
+.p-full-view .fv-container .fv-title {
+  font-size: 1.8rem;
+  width: 95%;
+  margin-bottom: 11px;
+}
+
+.p-full-view .fv-container .close-btn-cont {
+  width: 5%;
+}
+
+.p-full-view .fv-container .close-btn-cont .close-btn {
+  cursor: pointer;
+}
+
+.p-full-view .fv-container .fv-tag {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.p-full-view .fv-container .fv-info {
+  height: calc(100% - 115px);
+}
+
+.p-full-view .fv-container .fv-info .fv-img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-full-view .fv-container .fv-info .fv-info-right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  padding-left: 25px;
+}
+
+.p-full-view .fv-container .fv-info .fv-info-right .fv-desc {
+  font-size: 1.14rem;
+  line-height: 30px;
+}
+
+.p-full-view .fv-container .fv-info .fv-info-right .fv-btns {
+  width: 210px;
+}
+
+.p-full-view .fv-container .fv-info .fv-info-right .fv-btns .fv-btn {
+  cursor: pointer;
+  font-size: 1.21rem;
+  padding: 12px;
+  background-color: #f55800;
+  color: #fff;
 }
 
 .about-me-cont {
