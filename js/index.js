@@ -20,3 +20,15 @@ projects.forEach((project) => project.addEventListener('mouseout', (e) => {
   cover.classList.remove('hidden');
   see.classList.add('hidden');
 }));
+
+const Show_FV = (id) => {
+  const fvProject = document.getElementById(`fv-${id}`);
+
+  fvProject.classList.remove('hidden');
+};
+
+const Hide_FV = (id) => {
+  const fvProject = document.getElementById(`fv-${id}`);
+
+  fvProject.classList.add('hidden');
+}

@@ -11,12 +11,12 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <div class="p-full-view d-flex justify-c-center align-i-center w-100 h-100">
+  <div id="fv-1" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
     <div class="fv-container d-flex align-i-start">
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Agartha RPG</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(1)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -116,7 +116,7 @@
             <div class="tag2">Tiled</div>
           </div>
         </div>
-        <div id="see-1" class="see-btn w-100 hidden">See Project</div>
+        <div id="see-1" class="see-btn w-100 hidden" onclick="Show_FV(1)">See Project</div>
       </div>
       <div id="2" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/AVALON.png" alt="Avalon">
