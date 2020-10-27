@@ -170,7 +170,7 @@ html {
 }
 
 .welcome .main-image-cont {
-  max-width: 50%;
+  width: 50%;
 }
 
 .welcome .main-image-cont .image {
@@ -569,5 +569,59 @@ html {
 
 .footer .f-item .f-link:hover {
   color: #8993a4;
+}
+
+.show_fv {
+  -webkit-animation-name: show_fv;
+          animation-name: show_fv;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.hide_fv {
+  -webkit-animation-name: hide_fv;
+          animation-name: hide_fv;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes show_fv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show_fv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hide_fv {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hide_fv {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

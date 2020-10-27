@@ -157,7 +157,7 @@ html {
   }
 
   .main-image-cont {
-    max-width: 50%;
+    width: 50%;
 
     .image {
       object-fit: cover;
@@ -525,4 +525,26 @@ html {
       }
     }
   }
+}
+
+.show_fv {
+  animation-name: show_fv;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+.hide_fv {
+  animation-name: hide_fv;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes show_fv {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes hide_fv {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }

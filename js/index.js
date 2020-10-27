@@ -24,11 +24,14 @@ projects.forEach((project) => project.addEventListener('mouseout', (e) => {
 const Show_FV = (id) => {
   const fvProject = document.getElementById(`fv-${id}`);
 
-  fvProject.classList.remove('hidden');
+  fvProject.classList.remove('hidden','hide_fv');
+  fvProject.classList.add('show_fv');
 };
 
 const Hide_FV = (id) => {
   const fvProject = document.getElementById(`fv-${id}`);
 
-  fvProject.classList.add('hidden');
+  fvProject.classList.remove('show_fv');
+  fvProject.classList.add('hide_fv');
+  setTimeout(function(){fvProject.classList.add('hidden')}, 400);
 }
