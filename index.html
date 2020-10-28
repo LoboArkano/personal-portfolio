@@ -11,6 +11,21 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+  <div id="hamburger-menu" class="hamburger-menu d-flex w-100 h-100 hidden">
+    <img class="h-close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_HM()">
+    <a class="h-link dec-none" href="#portfolio" onclick="Hide_HM()">
+      <p>Portfolio</p>
+    </a>
+    <div class="h-line3"></div>
+    <a class="h-link dec-none" href="#about" onclick="Hide_HM()">
+      <p>About</p>
+    </a>
+    <div class="h-line3"></div>
+    <a class="h-link dec-none" href="#contact" onclick="Hide_HM()">
+      <p>Contact</p>
+    </a>
+    <div class="h-line3"></div>
+  </div>
   <div id="fv-0" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
     <div class="fv-container d-flex align-i-start">
       <div class="d-flex w-100 h-max">
@@ -201,6 +216,9 @@
         </a>
         <a class="nav-link dec-none" href="#contact">
           <img src="./assets/images/mail.png" alt="mail">
+        </a>
+        <a class="nav-link dec-none hidden" href="#">
+          <img src="./assets/images/Union.svg" alt="mail" onclick="Show_HM()">
         </a>
       </ul>
     </nav>

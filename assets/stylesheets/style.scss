@@ -105,6 +105,36 @@ html {
   }
 }
 
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  padding: 7%;
+  background-color: $dark-grey;
+  z-index: 11;
+
+  .h-close-btn {
+    cursor: pointer;
+    width: max-content;
+    align-self: flex-end;
+    margin-bottom: 34px;
+  }
+
+  .h-link {
+    font-size: 2.7rem;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  .h-line3 {
+    width: 100%;
+    height: 1px;
+    border: 1px solid $grey;
+    margin-bottom: 24px;
+  }
+}
+
 .welcome {
   height: 100vh;
   margin-top: 72px;
@@ -556,6 +586,18 @@ html {
 }
 
 @media only screen and (max-width: 492px) {
+  .nav-link-container {
+    justify-content: flex-end;
+
+    .nav-link {
+      display: none;
+    }
+
+    .nav-link:last-child {
+      display: block !important;
+    }
+  }
+
   .portfolio-section {
     padding: 120px 7%;
 

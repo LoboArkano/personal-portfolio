@@ -105,6 +105,42 @@ html {
           text-decoration: underline 1px #fff;
 }
 
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7%;
+  background-color: #3e3c3c;
+  z-index: 11;
+}
+
+.hamburger-menu .h-close-btn {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 34px;
+}
+
+.hamburger-menu .h-link {
+  font-size: 2.7rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hamburger-menu .h-line3 {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #8993a4;
+  margin-bottom: 24px;
+}
+
 .welcome {
   height: 100vh;
   margin-top: 72px;
@@ -635,6 +671,17 @@ html {
 }
 
 @media only screen and (max-width: 492px) {
+  .nav-link-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav-link-container .nav-link {
+    display: none;
+  }
+  .nav-link-container .nav-link:last-child {
+    display: block !important;
+  }
   .portfolio-section {
     padding: 120px 7%;
   }

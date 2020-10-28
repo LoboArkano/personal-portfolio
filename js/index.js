@@ -35,3 +35,16 @@ const Hide_FV = (id) => {
   fvProject.classList.add('hide_fv');
   setTimeout(function(){fvProject.classList.add('hidden')}, 400);
 }
+
+const Show_HM = () => {
+  const hamburgerM = document.getElementById('hamburger-menu');
+
+  hamburgerM.classList.remove('hidden');
+};
+
+
+const Hide_HM = () => {
+  const hamburgerM = document.getElementById('hamburger-menu');
+
+  hamburgerM.classList.add('hidden');
+};
