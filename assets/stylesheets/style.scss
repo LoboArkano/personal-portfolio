@@ -166,7 +166,7 @@ html {
 }
 
 .portfolio-section {
-  padding: 90px;
+  padding: 90px 7%;
 
   .portfolio-title {
     font-size: 2.5rem;
@@ -280,6 +280,7 @@ html {
           padding: 10px 12px;
           background-color: $dark-grey;
           margin-right: 6px;
+          margin-bottom: 6px;
         }
       }
     }
@@ -331,6 +332,7 @@ html {
     }
 
     .fv-tag {
+      height: max-content;
       padding: 10px 12px;
       border: 1px solid $grey;
       margin-right: 10px;
@@ -351,7 +353,7 @@ html {
         padding-left: 25px;
 
         .fv-desc {
-          font-size: 1.14rem;
+          font-size: 1.4rem;
           line-height: 30px;
         }
 
@@ -410,7 +412,11 @@ html {
     right: 0;
     width: 50%;
     height: 30%;
-    object-fit: cover;
+
+    img {
+      object-fit: cover;
+      object-position: left;
+    }
   }
 
   .h-line2 {
@@ -547,4 +553,206 @@ html {
 @keyframes hide_fv {
   from { opacity: 1; }
   to { opacity: 0; }
+}
+
+@media only screen and (max-width: 492px) {
+  .portfolio-section {
+    padding: 120px 7%;
+
+    .portfolio-title {
+      margin: 0 0 60px 0;
+    }
+
+    .h-line {
+      width: 100%;
+      margin-right: 0;
+      border-color: $grey;
+    }
+
+    .works {
+      grid-template-rows: 650px repeat(6, 470px);
+    }
+  }
+
+  .portfolio-section div:first-child {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  html { font-size: 13px; }
+
+  .welcome {
+    flex-direction: column;
+    padding: 30% 5%;
+    justify-content: center;
+
+    .social-box {
+      order: 2;
+      width: 100%;
+      margin-top: 25px;
+      padding-left: 20px;
+      align-items: flex-start;
+
+      .social-list {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+          .profile-link {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .presentation {
+      order: 1;
+      width: 100%;
+    }
+
+    .main-image-cont {
+      display: none;
+    }
+  }
+
+  .works {
+    grid-template-rows: 500px repeat(6, 470px);
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    .main-project {
+      grid-column: 1;
+      flex-direction: column;
+
+      .mp-img-cont {
+        height: 40%;
+        width: 100%;
+      }
+
+      .mp-info {
+        height: 60%;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 0;
+
+        .mp-title {
+          margin-bottom: 10px;
+        }
+
+        .mp-btn {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .project {
+      .p-image-cover {
+        height: calc(100% - 49.6px);
+      }
+
+      .see-btn {
+        display: block !important;
+      }
+    }
+  }
+
+  .about-me-cont {
+    padding: 120px 7%;
+    height: 1600px;
+
+    .about-me {
+      width: 100%;
+      height: max-content;
+    }
+
+    .about-me-img {
+      display: none;
+    }
+
+    .skills {
+      flex-direction: column;
+      height: max-content;
+      align-items: center;
+
+      .skill-col {
+        width: max-content;
+        line-height: 50px;
+        margin-bottom: 44px;
+
+        .s-item {
+          text-align: center;
+        }
+      }
+
+      .skill-col:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 120px 7%;
+
+    .c-text {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+
+    .c-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .submit-btn {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-image-cont {
+    .image {
+      object-position: left;
+    }
+  }
+
+  .p-full-view {
+    .fv-container {
+      padding: 16px;
+      width: 90%;
+      height: 90%;
+
+      .fv-title,
+      .close-btn {
+        margin-bottom: 30px;
+      }
+
+      .fv-tag {
+        margin-bottom: 15px;
+      }
+
+      .fv-info {
+        flex-wrap: wrap;
+        height: calc(95% - 108px);
+
+        .fv-img,
+        .fv-info-right {
+          width: 100% !important;
+        }
+
+        .fv-img {
+          height: 60%;
+        }
+
+        .fv-info-right {
+          padding-top: 0 !important;
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
 }
