@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 const portfolio = document.getElementById('portfolio-cont');
 const projects = portfolio.querySelectorAll('.project');
 
 projects.forEach((project) => project.addEventListener('mouseover', (e) => {
-  e.preventDefault;
+  e.preventDefault();
 
   const cover = document.getElementById(`cover-${project.id}`);
   const see = document.getElementById(`see-${project.id}`);
@@ -12,7 +13,7 @@ projects.forEach((project) => project.addEventListener('mouseover', (e) => {
 }));
 
 projects.forEach((project) => project.addEventListener('mouseout', (e) => {
-  e.preventDefault;
+  e.preventDefault();
 
   const cover = document.getElementById(`cover-${project.id}`);
   const see = document.getElementById(`see-${project.id}`);
@@ -21,29 +22,29 @@ projects.forEach((project) => project.addEventListener('mouseout', (e) => {
   see.classList.add('hidden');
 }));
 
-const Show_FV = (id) => {
+const showFV = (id) => {
   const fvProject = document.getElementById(`fv-${id}`);
 
-  fvProject.classList.remove('hidden','hide_fv');
+  fvProject.classList.remove('hidden', 'hide_fv');
   fvProject.classList.add('show_fv');
 };
 
-const Hide_FV = (id) => {
+const hideFV = (id) => {
   const fvProject = document.getElementById(`fv-${id}`);
 
   fvProject.classList.remove('show_fv');
   fvProject.classList.add('hide_fv');
-  setTimeout(function(){fvProject.classList.add('hidden')}, 400);
-}
+  setTimeout(() => { fvProject.classList.add('hidden'); }, 400);
+};
 
-const Show_HM = () => {
+const showHM = () => {
   const hamburgerM = document.getElementById('hamburger-menu');
 
   hamburgerM.classList.remove('hidden');
 };
 
 
-const Hide_HM = () => {
+const hideHM = () => {
   const hamburgerM = document.getElementById('hamburger-menu');
 
   hamburgerM.classList.add('hidden');

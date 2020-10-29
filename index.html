@@ -12,16 +12,16 @@
 </head>
 <body>
   <div id="hamburger-menu" class="hamburger-menu d-flex w-100 h-100 hidden">
-    <img class="h-close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_HM()">
-    <a class="h-link dec-none" href="#portfolio" onclick="Hide_HM()">
+    <img class="h-close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideHM()">
+    <a class="h-link dec-none" href="#portfolio" onclick="hideHM()">
       <p>Portfolio</p>
     </a>
     <div class="h-line3"></div>
-    <a class="h-link dec-none" href="#about" onclick="Hide_HM()">
+    <a class="h-link dec-none" href="#about" onclick="hideHM()">
       <p>About</p>
     </a>
     <div class="h-line3"></div>
-    <a class="h-link dec-none" href="#contact" onclick="Hide_HM()">
+    <a class="h-link dec-none" href="#contact" onclick="hideHM()">
       <p>Contact</p>
     </a>
     <div class="h-line3"></div>
@@ -31,7 +31,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Automovillage</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(0)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(0)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -56,7 +56,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Agartha RPG</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(1)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(1)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -81,7 +81,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Avalon Online Shop Demo</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(2)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(2)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -106,7 +106,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Nerium</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(3)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(3)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -131,7 +131,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Weather App</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(4)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(4)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -156,7 +156,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">TODO List</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(5)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(5)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -181,7 +181,7 @@
       <div class="d-flex w-100 h-max">
         <h3 class="fv-title">Tic Tac Toe</h3>
         <div class="close-btn-cont d-flex justify-c-center align-i-center">
-          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="Hide_FV(6)">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(6)">
         </div>
       </div>
       <div class="d-flex w-100 h-max">
@@ -220,7 +220,7 @@
           <img src="./assets/images/mail.png" alt="mail">
         </a>
         <a class="nav-link dec-none hidden">
-          <img src="./assets/images/Union.svg" alt="mail" onclick="Show_HM()">
+          <img src="./assets/images/Union.svg" alt="mail" onclick="showHM()">
         </a>
       </ul>
     </nav>
@@ -274,7 +274,7 @@
             <div class="tag">Capybara</div>
             <div class="tag">Cloudinary</div>
           </div>
-          <div class="mp-btn" onclick="Show_FV(0)">See Project</div>
+          <div class="mp-btn" onclick="showFV(0)">See Project</div>
         </div>
       </div>
       <div id="1" class="project w-100 h-100">
@@ -288,7 +288,7 @@
             <div class="tag2">Tiled</div>
           </div>
         </div>
-        <div id="see-1" class="see-btn w-100 hidden" onclick="Show_FV(1)">See Project</div>
+        <div id="see-1" class="see-btn w-100 hidden" onclick="showFV(1)">See Project</div>
       </div>
       <div id="2" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/AVALON.png" alt="Avalon">
@@ -301,7 +301,7 @@
             <div class="tag2">Bootstrap</div>
           </div>
         </div>
-        <div id="see-2" class="see-btn w-100 hidden" onclick="Show_FV(2)">See Project</div>
+        <div id="see-2" class="see-btn w-100 hidden" onclick="showFV(2)">See Project</div>
       </div>
       <div id="3" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/Nerium.png" alt="Nerium">
@@ -314,7 +314,7 @@
             <div class="tag2">Sass</div>
           </div>
         </div>
-        <div id="see-3" class="see-btn w-100 hidden" onclick="Show_FV(3)">See Project</div>
+        <div id="see-3" class="see-btn w-100 hidden" onclick="showFV(3)">See Project</div>
       </div>
       <div id="4" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/WeatherApp.png" alt="Agartha RPG">
@@ -327,7 +327,7 @@
             <div class="tag2">Webpack</div>
           </div>
         </div>
-        <div id="see-4" class="see-btn w-100 hidden" onclick="Show_FV(4)">See Project</div>
+        <div id="see-4" class="see-btn w-100 hidden" onclick="showFV(4)">See Project</div>
       </div>
       <div id="5" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/TODOApp.png" alt="Agartha RPG">
@@ -340,7 +340,7 @@
             <div class="tag2">Sass</div>
           </div>
         </div>
-        <div id="see-5" class="see-btn w-100 hidden" onclick="Show_FV(5)">See Project</div>
+        <div id="see-5" class="see-btn w-100 hidden" onclick="showFV(5)">See Project</div>
       </div>
       <div id="6" class="project w-100 h-100">
         <img class="p-image w-100 h-100" src="./assets/images/TicTacToe.png" alt="Agartha RPG">
@@ -353,7 +353,7 @@
             <div class="tag2">Sass</div>
           </div>
         </div>
-        <div id="see-6" class="see-btn w-100 hidden" onclick="Show_FV(6)">See Project</div>
+        <div id="see-6" class="see-btn w-100 hidden" onclick="showFV(6)">See Project</div>
       </div>
     </div>
   </section>
