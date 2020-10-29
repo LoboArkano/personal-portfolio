@@ -72,7 +72,7 @@ html {
 
 .internal-link {
   position: absolute;
-  top: -72px;
+  top: -71px;
   left: 0;
 }
 
@@ -83,6 +83,10 @@ html {
 .nav-link:hover {
   -webkit-text-decoration: underline 1px #fff;
           text-decoration: underline 1px #fff;
+}
+
+.nav-link:last-child {
+  cursor: pointer;
 }
 
 .header {

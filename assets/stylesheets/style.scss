@@ -21,6 +21,8 @@ $white: #fff;
 
 $navHeight: 72px;
 
+$navLinkTop: ($navHeight * -1) + 1px;
+
 * {
   box-sizing: border-box;
 }
@@ -77,7 +79,7 @@ html {
 
 .internal-link {
   position: absolute;
-  top: -$navHeight;
+  top: $navLinkTop;
   left: 0;
 }
 
@@ -87,6 +89,10 @@ html {
   &:hover {
     text-decoration: underline 1px $white;
   }
+}
+
+.nav-link:last-child {
+  cursor: pointer;
 }
 
 .header {

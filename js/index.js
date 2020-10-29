@@ -1,4 +1,4 @@
-const portfolio = document.getElementById('portfolio');
+const portfolio = document.getElementById('portfolio-cont');
 const projects = portfolio.querySelectorAll('.project');
 
 projects.forEach((project) => project.addEventListener('mouseover', (e) => {
