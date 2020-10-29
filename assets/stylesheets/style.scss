@@ -19,6 +19,8 @@ $black: #000;
 
 $white: #fff;
 
+$navHeight: 72px;
+
 * {
   box-sizing: border-box;
 }
@@ -73,12 +75,27 @@ html {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.header {
+.internal-link {
   position: absolute;
-  height: 72px;
+  top: -$navHeight;
+  left: 0;
+}
+
+.nav-link {
+  color: $white;
+
+  &:hover {
+    text-decoration: underline 1px $white;
+  }
+}
+
+.header {
+  position: fixed;
+  height: $navHeight;
   left: 0;
   top: 0;
   background-color: $dark-grey;
+  z-index: 5;
 
   .navbar {
     padding-left: 5%;
@@ -93,14 +110,6 @@ html {
 
     .nav-link-container {
       width: 265px;
-
-      .nav-link {
-        color: $white;
-
-        &:hover {
-          text-decoration: underline 1px $white;
-        }
-      }
     }
   }
 }
@@ -136,6 +145,7 @@ html {
 }
 
 .welcome {
+  position: relative;
   height: 100vh;
   margin-top: 72px;
   background-color: #1c1a19;
@@ -196,6 +206,7 @@ html {
 }
 
 .portfolio-section {
+  position: relative;
   padding: 90px 7%;
 
   .portfolio-title {
@@ -485,6 +496,7 @@ html {
 }
 
 .contact {
+  position: relative;
   color: $black;
   padding: 7%;
 
@@ -616,7 +628,7 @@ html {
     }
   }
 
-  .portfolio-section div:first-child {
+  .portfolio-section div:nth-child(2) {
     flex-direction: column;
   }
 }

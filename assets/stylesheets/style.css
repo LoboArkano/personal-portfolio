@@ -70,12 +70,28 @@ html {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.header {
+.internal-link {
   position: absolute;
+  top: -72px;
+  left: 0;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  -webkit-text-decoration: underline 1px #fff;
+          text-decoration: underline 1px #fff;
+}
+
+.header {
+  position: fixed;
   height: 72px;
   left: 0;
   top: 0;
   background-color: #3e3c3c;
+  z-index: 5;
 }
 
 .header .navbar {
@@ -94,15 +110,6 @@ html {
 
 .header .navbar .nav-link-container {
   width: 265px;
-}
-
-.header .navbar .nav-link-container .nav-link {
-  color: #fff;
-}
-
-.header .navbar .nav-link-container .nav-link:hover {
-  -webkit-text-decoration: underline 1px #fff;
-          text-decoration: underline 1px #fff;
 }
 
 .hamburger-menu {
@@ -142,6 +149,7 @@ html {
 }
 
 .welcome {
+  position: relative;
   height: 100vh;
   margin-top: 72px;
   background-color: #1c1a19;
@@ -215,6 +223,7 @@ html {
 }
 
 .portfolio-section {
+  position: relative;
   padding: 90px 7%;
 }
 
@@ -533,6 +542,7 @@ html {
 }
 
 .contact {
+  position: relative;
   color: #000;
   padding: 7%;
 }
@@ -697,7 +707,7 @@ html {
     -ms-grid-rows: 650px (470px)[6];
         grid-template-rows: 650px repeat(6, 470px);
   }
-  .portfolio-section div:first-child {
+  .portfolio-section div:nth-child(2) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
