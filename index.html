@@ -11,79 +11,425 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-  <header class="header-nav d-flex w-100">
-    <nav class="navbar d-flex">
-      <div class="nav-title">Personal Portfolio</div>
-      <ul class="nav-link-container d-flex h-100">
-        <a class="nav-link" href="#welcome">
+  <div id="hamburger-menu" class="hamburger-menu d-flex w-100 h-100 hidden">
+    <img class="h-close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideHM()">
+    <a class="h-link dec-none" href="#portfolio" onclick="hideHM()">
+      <p>Portfolio</p>
+    </a>
+    <div class="h-line3"></div>
+    <a class="h-link dec-none" href="#about" onclick="hideHM()">
+      <p>About</p>
+    </a>
+    <div class="h-line3"></div>
+    <a class="h-link dec-none" href="#contact" onclick="hideHM()">
+      <p>Contact</p>
+    </a>
+    <div class="h-line3"></div>
+  </div>
+  <div id="fv-0" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Automovillage</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(0)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">Ruby on Rails</div>
+        <div class="fv-tag">Ruby</div>
+        <div class="fv-tag">Capybara</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/automovillage.jpg" alt="Automovillage Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">On this web page is possible to create an account and login. As a registered user, you can vote for news and post your news. Cloudinary is the external storage for the images, Active Record handles the rest of the data.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://automovillage.herokuapp.com/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/Automovillage" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-1" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Agartha RPG</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(1)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">JavaScript</div>
+        <div class="fv-tag">Phaser 3</div>
+        <div class="fv-tag">Tiled</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/AGARTHA RPG.png" alt="Agartha RPG Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">Agartha RPG is a videogame build it with Phaser 3 and Tiled.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="http://agartha-rpg.netlify.app" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/RPG-Game" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-2" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Avalon Online Shop Demo</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(2)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">HTML5</div>
+        <div class="fv-tag">Sass</div>
+        <div class="fv-tag">Bootstrap</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/AVALON.png" alt="Avalon Online Shop Demo Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">The perfect gift for the Dungeons & Dragons fans in your life or as a treat for yourself.Need a gift for the holidays? A birthday present, a treat for yourself? This is it.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://avalon-online-shop.netlify.app/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/Avalon-Online-Shop" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-3" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Nerium</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(3)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">Javascript</div>
+        <div class="fv-tag">Webpack</div>
+        <div class="fv-tag">Sass</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/Nerium.png" alt="Nerium Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">Nerium is a unique experience that can be compared to a sweet awakening, a pleasant meal or an unforgettable dinner accompanied by an exclusive atmosphere for you.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://restaurant-page-roberto.netlify.app/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/Restaurant-Page" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-4" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Weather App</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(4)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">Javascript</div>
+        <div class="fv-tag">openWeather API</div>
+        <div class="fv-tag">Webpack</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/WeatherApp.png" alt="Weather App Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">Weather App to receive the weather data from any city in the world.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://weather-app-roberto.netlify.app/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/Weather-App" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-5" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">TODO List</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(5)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">Javascript</div>
+        <div class="fv-tag">Webpack</div>
+        <div class="fv-tag">Sass</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/TODOApp.png" alt="TODO List Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">TODO application to create a project and list the different tasks to be performed.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://todo-list-roberto.netlify.app/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/TODO-List" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fv-6" class="p-full-view d-flex justify-c-center align-i-center w-100 h-100 hidden">
+    <div class="fv-container d-flex align-i-start">
+      <div class="d-flex w-100 h-max">
+        <h3 class="fv-title">Tic Tac Toe</h3>
+        <div class="close-btn-cont d-flex justify-c-center align-i-center">
+          <img class="close-btn" src="./assets/images/Icon.svg" alt="close" onclick="hideFV(6)">
+        </div>
+      </div>
+      <div class="d-flex w-100 h-max">
+        <div class="fv-tag">Javascript</div>
+        <div class="fv-tag">HTML5</div>
+        <div class="fv-tag">Sass</div>
+      </div>
+      <div class="d-flex fv-info w-100">
+        <img class="fv-img h-100" src="./assets/images/TicTacToe.png" alt="Tic Tac Toe Full View">
+        <div class="fv-info-right d-flex justify-c-space">
+          <p class="fv-desc">Tic-Tac-Toe game for web browser with a Retro design.</p>
+          <div class="fv-btns d-flex justify-c-space">
+            <a class="dec-none" href="https://tic-tac-toe-roberto.netlify.app/" target="_blank"><div class="fv-btn">See Live</div></a>
+            <a class="dec-none" href="https://github.com/LoboArkano/Tic-Tac-Toe-JS" target="_blank"><div class="fv-btn">See Source</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header w-100">
+    <nav class="navbar w-100 h-100 d-flex justify-c-space align-i-center">
+      <div class="name">
+        <a class="nav-link dec-none" href="#welcome">Roberto Pérez</a>
+      </div>
+      <ul class="nav-link-container d-flex justify-c-space align-i-center">
+        <a class="nav-link dec-none" href="#portfolio">
+          <li>Portfolio</li>
+        </a>
+        <a class="nav-link dec-none" href="#about">
           <li>About</li>
         </a>
-        <a class="nav-link" href="#projects">
-          <li>Work</li>
-        </a>
-        <a class="nav-link" href="#contact">
+        <a class="nav-link dec-none" href="#contact">
           <li>Contact</li>
+        </a>
+        <a class="nav-link dec-none" href="#contact">
+          <img src="./assets/images/mail.png" alt="mail">
+        </a>
+        <a class="nav-link dec-none hidden">
+          <img src="./assets/images/Union.svg" alt="mail" onclick="showHM()">
         </a>
       </ul>
     </nav>
   </header>
-  <section id="welcome" class="welcome-section d-flex w-100">
-    <h1 class="title">HELLO! I'm Roberto</h1>
-    <p>a fullstack web developer</p>
+  <section class="welcome d-flex w-100">
+    <div id="welcome" class="internal-link"></div>
+    <div class="social-box d-flex align-i-center">
+      <ul class="social-list">
+        <li class="item">
+          <a class="profile-link" href="https://github.com/LoboArkano" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="item">
+          <a class="profile-link" href="https://www.linkedin.com/in/jose-roberto-perez-jimenez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="item">
+          <a class="profile-link" href="https://angel.co/u/jose-roberto-perez-jimenez" target="_blank"><i class="fab fa-angellist"></i></a>
+        </li>
+        <li class="item">
+          <a class="profile-link" href="https://twitter.com/LoboArcano92" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="presentation d-flex">
+      <h1 class="title">Hey There.<br>I'm Roberto</h1>
+      <h2 class="subtitle">I’m a Web Developer</h2>
+      <p class="desc">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        don’t hestiate to contact me.</p>
+    </div>
+    <div class="main-image-cont">
+      <img class="image w-100 h-100" src="./assets/images/main-background.png" alt="main-background">
+    </div>
   </section>
-  <section id="projects" class="projects-section w-100">
-    <h2 class="title">These are some of my projects</h2>
-    <div class="projects-grid w-100">
-      <div class="project-tile">
-        <div class="name w-100">
-          <span>Automovillage</span> 
+  <section id="portfolio-cont" class="portfolio-section w-100">
+    <div id="portfolio" class="internal-link"></div>
+    <div class="d-flex align-i-center">
+      <h2 class="portfolio-title">My Recent Work</h2>
+      <div class="h-line"></div>
+    </div>
+    <div class="works d-grid w-100">
+      <div id="0" class="main-project d-flex">
+        <div class="mp-img-cont h-100">
+          <img class="mp-img w-100 h-100" src="./assets/images/automovillage.jpg" alt="">
         </div>
-        <a href="https://powerful-fjord-50645.herokuapp.com/" class="image-link w-100" target="_blank">
-          <img src="assets/images/automovillage.jpg" alt="Automovillage" class="img w-100 h-100">
-        </a>
-        <a class="dec-none" href="https://github.com/LoboArkano/Automovillage" target="_blank">
-          <div class="button w-100">GitHub</div>
-        </a>
-        <a class="dec-none" href="https://powerful-fjord-50645.herokuapp.com/" target="_blank">
-          <div class="button w-100">Demo</div>
-        </a>
+        <div class="mp-info h-100">
+          <h3 class="mp-title">Automovillage</h3>
+          <p class="mp-desc">On this web page is possible to create an account and login. As a registered user, you can vote for news and post your news. Cloudinary is the external storage for the images, Active Record handles the rest of the data.</p>
+          <div class="tags-cont d-flex w-100">
+            <div class="tag">Ruby on Rails</div>
+            <div class="tag">Ruby</div>
+            <div class="tag">Sass</div>
+            <div class="tag">Capybara</div>
+            <div class="tag">Cloudinary</div>
+          </div>
+          <div class="mp-btn" onclick="showFV(0)">See Project</div>
+        </div>
       </div>
-      <div class="project-tile">
-        <div class="name w-100">
-          <span>Ávalon</span> 
+      <div id="1" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/AGARTHA RPG.png" alt="Agartha RPG">
+        <div id="cover-1" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">Agartha RPG</h3>
+          <p class="p-desc">Agartha RPG is a videogame build it with Phaser 3 and Tiled.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">Javascript</div>
+            <div class="tag2">Phaser 3</div>
+            <div class="tag2">Tiled</div>
+          </div>
         </div>
-        <a href="https://raw.githack.com/LoboArkano/HTML-CSS-capstone-project-Online-Shop/master/index.html" class="image-link w-100" target="_blank">
-          <img src="assets/images/avalon.png" alt="Ávalon" class="img w-100 h-100">
-        </a>
-        <a class="dec-none" href="https://github.com/LoboArkano/Avalon-Online-Shop" target="_blank">
-          <div class="button w-100">GitHub</div>
-        </a>
-        <a class="dec-none" href="https://raw.githack.com/LoboArkano/HTML-CSS-capstone-project-Online-Shop/master/index.html" target="_blank">
-          <div class="button w-100">Demo</div>
-        </a>
+        <div id="see-1" class="see-btn w-100 hidden" onclick="showFV(1)">See Project</div>
       </div>
-      <div class="project-tile">
-        <div class="name w-100">
-          <span>Ruby Linter for Python</span> 
+      <div id="2" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/AVALON.png" alt="Avalon">
+        <div id="cover-2" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">Avalon Online Shop Demo</h3>
+          <p class="p-desc">The perfect gift for the Dungeons & Dragons fans in your life or as a treat for yourself.Need a gift for the holidays? A birthday present, a treat for yourself? This is it.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">HTML5</div>
+            <div class="tag2">Sass</div>
+            <div class="tag2">Bootstrap</div>
+          </div>
         </div>
-        <a href="https://github.com/LoboArkano/Ruby-Linter-for-Python" class="image-link w-100" target="_blank">
-          <img src="assets/images/ruby-linter.JPG" alt="Automovillage" class="img w-100 h-100">
-        </a>
-        <a class="dec-none" href="https://github.com/LoboArkano/Ruby-Linter-for-Python" target="_blank">
-          <div class="button w-100">GitHub</div>
-        </a>
-        <a class="dec-none" href="https://github.com/LoboArkano/Ruby-Linter-for-Python" target="_blank">
-          <div class="button w-100">Demo</div>
-        </a>
+        <div id="see-2" class="see-btn w-100 hidden" onclick="showFV(2)">See Project</div>
+      </div>
+      <div id="3" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/Nerium.png" alt="Nerium">
+        <div id="cover-3" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">Nerium</h3>
+          <p class="p-desc">Nerium is a unique experience that can be compared to a sweet awakening, a pleasant meal or an unforgettable dinner accompanied by an exclusive atmosphere for you.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">Javascript</div>
+            <div class="tag2">Webpack</div>
+            <div class="tag2">Sass</div>
+          </div>
+        </div>
+        <div id="see-3" class="see-btn w-100 hidden" onclick="showFV(3)">See Project</div>
+      </div>
+      <div id="4" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/WeatherApp.png" alt="Agartha RPG">
+        <div id="cover-4" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">Weather App</h3>
+          <p class="p-desc">Weather App to receive the weather data from any city in the world.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">Javascript</div>
+            <div class="tag2">openWeather API</div>
+            <div class="tag2">Webpack</div>
+          </div>
+        </div>
+        <div id="see-4" class="see-btn w-100 hidden" onclick="showFV(4)">See Project</div>
+      </div>
+      <div id="5" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/TODOApp.png" alt="Agartha RPG">
+        <div id="cover-5" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">TODO List</h3>
+          <p class="p-desc">TODO application to create a project and list the different tasks to be performed.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">Javascript</div>
+            <div class="tag2">Webpack</div>
+            <div class="tag2">Sass</div>
+          </div>
+        </div>
+        <div id="see-5" class="see-btn w-100 hidden" onclick="showFV(5)">See Project</div>
+      </div>
+      <div id="6" class="project w-100 h-100">
+        <img class="p-image w-100 h-100" src="./assets/images/TicTacToe.png" alt="Agartha RPG">
+        <div id="cover-6" class="p-image-cover w-100 h-100 d-flex">
+          <h3 class="p-title">Tic Tac Toe</h3>
+          <p class="p-desc">Tic-Tac-Toe game for web browser with a Retro design.</p>
+          <div class="tags-cont2 d-flex w-100">
+            <div class="tag2">Javascript</div>
+            <div class="tag2">HTML5</div>
+            <div class="tag2">Sass</div>
+          </div>
+        </div>
+        <div id="see-6" class="see-btn w-100 hidden" onclick="showFV(6)">See Project</div>
       </div>
     </div>
-    <br>
-    <a href="https://github.com/LoboArkano?tab=repositories" target="_blank"><input type="button" value="See All Projects"></a>
   </section>
-  <footer id="contact" class="contact w-100">
-    <a class="profile-link" href="https://github.com/LoboArkano" target="_blank"><i class="fab fa-github"></i></a>
-    <a class="profile-link" href="https://www.linkedin.com/in/jose-roberto-perez-jimenez/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a class="profile-link" href="https://twitter.com/LoboArcano92" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  <section class="about-me-cont w-100 d-flex justify-c-space">
+    <div id="about" class="internal-link"></div>
+    <div class="about-me">
+      <h3 class="am-title">About me</h3>
+      <p class="am-desc">Hello I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <a class="nav-link dec-none" href="./resume.html" target="_blank" rel="noopener noreferrer">
+        <div class="am-btn">Get My Resume</div>
+      </a>
+    </div>
+    <div class="about-me-img">
+      <img class="w-100 h-100" src="./assets/images/bottom_background.png" alt="">
+    </div>
+    <div class="h-line2 w-100"></div>
+    <div class="skills d-flex w-100">
+      <div class="skill-col">
+        <ul>
+          <li class="s-title shape-1">Language</li>
+          <li class="s-item">Javascript</li>
+          <li class="s-item">Ruby</li>
+          <li class="s-item">Html5</li>
+          <li class="s-item">Sass</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <ul>
+          <li class="s-title shape-2">Frameworks</li>
+          <li class="s-item">Bootstrap</li>
+          <li class="s-item">Ruby on Rails</li>
+          <li class="s-item">RSpec</li>
+          <li class="s-item">Capybara</li>
+          <li class="s-item">Phaser 3</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <ul>
+          <li class="s-title shape-3">Skills</li>
+          <li class="s-item">Github</li>
+          <li class="s-item">Codepen</li>
+          <li class="s-item">Terminal</li>
+          <li class="s-item">Firebase</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="contact d-flex w-100">
+    <div id="contact" class="internal-link"></div>
+    <p class="c-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+    <form accept-charset="UTF-8" action="https://getform.io/f/3f1b392d-7780-4c70-a767-ee36dcadaf1d" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform" class="c-form">
+      <div class="d-flex justify-c-space w-100">
+        <input type="text" name="first" placeholder="First Name" required='required'>
+        <input type="text" name="last" placeholder="Last Name" required='required'>
+      </div>
+      <input type="text" name="email" placeholder="Email address" required='required'>
+      <textarea name="message" placeholder="Leave your meassage" required='required'></textarea>
+      <button class="submit-btn" type="submit">Get in touch</button>
+    </form>
+  </section>
+  <footer class="footer d-flex w-100 justify-c-center">
+    <ul class="d-flex">
+      <li class="f-item">
+        <a class="f-link" href="https://github.com/LoboArkano" target="_blank"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="f-item">
+        <a class="f-link" href="https://www.linkedin.com/in/jose-roberto-perez-jimenez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="f-item">
+        <a class="f-link" href="https://angel.co/u/jose-roberto-perez-jimenez" target="_blank"><i class="fab fa-angellist"></i></a>
+      </li>
+      <li class="f-item">
+        <a class="f-link" href="https://twitter.com/LoboArcano92" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      </li>
+    </ul>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>
