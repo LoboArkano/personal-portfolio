@@ -4,12 +4,13 @@
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/33432289/88358179-9086c900-cd33-11ea-87f6-7c2d1bb93f55.png)
+![image](https://user-images.githubusercontent.com/33432289/97646134-7d5f5580-1a14-11eb-936a-41e4cf32eb5a.png)
 
 ## Built With
 
 - HTML5
 - CSS/SASS
+- JavaScript
 
 ## Live Demo
 
