@@ -11,7 +11,7 @@ $dark-grey: #3e3c3c;
 
 $darker-grey: #1c1a19;
 
-$orange: #f55800;
+$orange: #ff640a;
 
 $light-orange: #fa7629;
 
@@ -287,8 +287,9 @@ html {
           height: max-content;
           padding: 12px 12px;
           font-size: 1.2rem;
-          color: $white;
+          color: $black;
           background-color: $orange;
+          font-weight: bold;
         }
       }
     }
@@ -323,6 +324,7 @@ html {
       cursor: pointer;
       width: max-content;
       font-size: 1.7rem;
+      color: $black;
       background-color: $orange;
       padding: 12px;
     }
@@ -433,7 +435,7 @@ html {
       width: max-content;
       padding: 12px;
       background-color: $orange;
-      color: $white;
+      color: $black;
       font-size: 1.5rem;
     }
   }

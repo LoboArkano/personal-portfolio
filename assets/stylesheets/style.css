@@ -202,7 +202,7 @@ html {
 
 .welcome .presentation .title {
   font-size: 4rem;
-  color: #f55800;
+  color: #ff640a;
   line-height: 65px;
   margin-bottom: 10px;
 }
@@ -322,8 +322,9 @@ html {
   height: max-content;
   padding: 12px 12px;
   font-size: 1.2rem;
-  color: #fff;
-  background-color: #f55800;
+  color: #000;
+  background-color: #ff640a;
+  font-weight: bold;
 }
 
 .about-me-cont {
@@ -345,7 +346,7 @@ html {
 
 .about-me-cont .about-me .am-title {
   font-size: 5rem;
-  color: #f55800;
+  color: #ff640a;
   margin-bottom: 24px;
 }
 
@@ -361,7 +362,8 @@ html {
   width: -moz-max-content;
   width: max-content;
   font-size: 1.7rem;
-  background-color: #f55800;
+  color: #000;
+  background-color: #ff640a;
   padding: 12px;
 }
 
@@ -477,8 +479,8 @@ html {
   width: -moz-max-content;
   width: max-content;
   padding: 12px;
-  background-color: #f55800;
-  color: #fff;
+  background-color: #ff640a;
+  color: #000;
   font-size: 1.5rem;
 }
 
