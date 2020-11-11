@@ -384,6 +384,7 @@ html {
   .c-text {
     width: 40%;
     font-size: 2.9rem;
+    padding-right: 8px;
   }
 
   .c-form {
@@ -417,6 +418,7 @@ html {
     input[name=last],
     input[name=email],
     textarea[name=message] {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
       margin-bottom: 25px;
       border: none;
       border-bottom: 1px solid $grey;

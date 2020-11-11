@@ -423,6 +423,7 @@ html {
 .contact .c-text {
   width: 40%;
   font-size: 2.9rem;
+  padding-right: 8px;
 }
 
 .contact .c-form {
@@ -457,6 +458,7 @@ html {
 .contact .c-form input[name=last],
 .contact .c-form input[name=email],
 .contact .c-form textarea[name=message] {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin-bottom: 25px;
   border: none;
   border-bottom: 1px solid #8993a4;
