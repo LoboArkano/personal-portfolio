@@ -577,8 +577,12 @@ html {
           margin-bottom: 10px;
         }
 
-        .mp-btn {
-          margin-top: 5px;
+        .mp-btns {
+          width: 200px;
+
+          .mp-btn {
+            margin-top: 5px;
+          }
         }
       }
     }
