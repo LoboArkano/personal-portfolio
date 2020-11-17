@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/33432289/97646134-7d5f5580-1a14-11eb-936a-41e4cf32eb5a.png)
+![image](https://user-images.githubusercontent.com/33432289/99428918-e6781180-28cc-11eb-95b4-6fca6f2027d6.png)
 
 ## Built With
 
